@@ -1,11 +1,178 @@
 /* Add your CSS to this file */
+* {
+  box-sizing: border-box;
+}
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: apple-system,BlinkMacSystemFont, "segoe UI", Roboto, "Hellvetica Neue", Arial, "Noto Sans", sans-serif;
+
 }
 
 .container {
+	display: flex;
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
 }
+
+
+ h1{
+ 	font-size: 18px;
+ }  
+.header {
+  list-style-type: none;
+  font-size: 18px;
+	}
+
+nav {
+	display: flex;
+flex-direction: row-reverse;	}
+
+.header h1{
+  display: flex;
+  background-color: white;
+  font-size: 18px;
+}
+    
+
+li{
+	margin-top: auto;
+	marker-bottom:auto;
+  display:flex;
+  float: right; 
+}
+
+.header ul{
+	list-style-type: none;
+	float: right;
+}
+
+
+
+li.a:link {
+	color: #6b7280;
+}
+
+li.a:hover{
+	color: #5A67D8;
+}
+
+section{
+	display: block;
+}
+
+div.overview-hero-image{
+	float:left;
+	background-color: #E2E8F0;
+}
+div.overview-hero-text{
+	background-color: #E2E8F0;
+
+}
+
+ h2{			/*Learn About*/
+
+float: left;
+	font-size: 24px;
+	color: #48BB78;
+}
+
+.cards{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+	grid-gap: 20px;
+	justify-content: space-between;	
+}
+.card{
+	display: grid;
+	grid-template-rows: max-content 200px 1fr;
+}
+
+/*
+.learnabout .cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  clear:both;
+}
+
+.row {margin: 0 -5px;}
+*/
+.row:after {
+  content: "";
+  display: table-row;
+  clear: both;
+}
+/*
+.card{
+    flex: 0 1 24%;
+    justify-content: center;
+	background-color: #E2E8F0;
+	border-radius:5px;
+  }*/
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: #E2E8F0;
+}
+.card img {
+  border-radius: 5px 5px 0 0;
+  width: 100%;
+
+}
+ h3{
+ 	color: #48BB78;
+ 	font-size: 21px;
+
+ }
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+
+.testing{
+	display: flex;
+	flex-direction: row;
+	background-color: #4A5568;
+	font-color: white;
+
+
+}
+.testing a:link{/*links in learn more*/
+	background-color: #48BB78;
+	border-radius: 5px;
+
+}
+
+
+.stories{
+	font-color: #5A67D8;
+}
+
+.stories h2{
+	font-size: 18px;
+}
+
+.stories img{
+display: grid;
+	border-radius: 50%: 
+	}
+
+.newsletter{
+	background-color: #48BB78;
+	color:white;
+
+}
+
+.newsletter button{
+	background-color: #5A67D8;
+}
+footer{
+	float: center;
+	background-color: #4A5568;
+	color:white;
+}
+
+
